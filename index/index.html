@@ -8,10 +8,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class=" pr-4">
-  <div class="sm:flex sm:flex-row flex flex-col items-center pr-4">
+<body class=" md:pr-0 md:pl-0 pl-4 pr-4">
+  <div class=" md:pr-4">
+   
     <header
-      class="sm:w-1/4 sm:h-screen h-200 w-full pb-6 sm:fixed sm:top-0 sm: bg-gray-200  sm:overflow-y-scroll sm:pt-16 sm-z-10 ">
+      class="md:w-1/4 sm:h-screen md:h-200  :w-full md:pb-6 md:fixed md:top-0 sm: bg-gray-200  md:overflow-y-scroll md:pt-16 md-z-10  md:opacity-100 opacity-0 ">
       <h1
         class="sm:font-bold font-bold sm:text-4xl text-2xl flex flex-col items-center sm:flex sm:flex-row sm:justify-center sm:text-center">
         Louise<span class="text-gray-400">.</span>
@@ -76,7 +77,7 @@
               </div>
             </div>
 
-            <div class=" flex flex-col items-end">
+            <div class=" flex flex-col md:items-end items-center">
               <div class=" bg-white border-2 border-solid gray-400 w-96 h-80  flex flex-col items-center space-y-4">
                 <h2 class="font-bold text-xl">For more information </h2>
                 <div
@@ -91,9 +92,9 @@
           </div>
         </div>
 
-        <div id="contact" class=" w-full h-screen left-1/4 pt-16 pl-8 pr-8">
+        <div id="contact" class=" w-full h-screen left-1/4 pt-16 md:pl-8 md:pr-8 flex flex-col items-center">
           <h1 class="font-bold text-2xl ">Contact Information</h1>
-          <div class="lg:mt-8 lg:flex lg:flex-row mt-8 flex flex-col justify-between">
+          <div class="lg:mt-8 lg:flex lg:flex-row mt-8 flex flex-col md:justify-between items-center">
             <div class="text-gray-400"> Address: Rwanda, Kigali, Kimironko</div>
             <div><span class="text-gray-400">Phone:</span>+250786170670 </div>
             <div><span class="text-gray-400">Email:</span>nyiranezalouise93@gmail.com</div>
@@ -108,11 +109,11 @@
               <h1 class="font-bold text-xl">Oops! Samething Went Wrong.</h1>
               <p>This page didn't load Google Maps correctly. See the JavaScript console for technical details.</p>
             </div>
-            <div class="lg:w-3/5 lg:h-96 w-full h-96 space-y-4 lg:pl-8 ">
-              <input type="text" class="w-96 h-10 border-solid border-gray-100 border-2" placeholder="Your Name"><br>
-              <input type="text" class="w-96 h-10 border-solid border-gray-100 border-2" placeholder="Your Email"><br>
-              <input type="text" class="w-96 h-10 border-solid border-gray-100 border-2" placeholder="Subject"><br>
-              <textarea class="w-96 h-60 border-solid border-gray-100 border-2" placeholder="Message"></textarea><br>
+            <div class="lg:w-3/5 lg:h-96 w-full h-96 space-y-4 lg:pl-8 mt-6 flex flex-col items-center ">
+              <input type="text" class="w-96 h-40 border-solid border-gray-100 border-2" placeholder="Your Name"><br>
+              <input type="text" class="w-96 h-40 border-solid border-gray-100 border-2" placeholder="Your Email"><br>
+              <input type="text" class="w-96 h-40 border-solid border-gray-100 border-2" placeholder="Subject"><br>
+              <textarea class="w-96 h-80 border-solid border-gray-100 border-2" placeholder="Message"></textarea><br>
               <button
                 class="bg-orange-400 rounded-full py-4 px-6 hover:bg-white hover:border-2 hover:border-solid hover:border-red-300">Send
                 Message</button>
@@ -120,13 +121,13 @@
 
           </div>
         </div>
-        <div id="project" class="h-screen w-full  left-1/4 lg:pt-8 mt-">
+        <div id="project" class="h-screen w-full  left-1/4 lg:pt-8 mt-44">
           <h1 class="font-bold text-xl flex flex-col justify-center items-center">My projects</h1>
           <div class="">
 
 
-            <div class="pr-8">
-              <div class="flex flex-row mt-4 justify-end space-x-4">
+            <div class="md:pr-8">
+              <div class="flex md:flex-row flex-col mdmt-4 mt-8 justify-end space-x-4">
                 <a href="https://nyiranez.github.io/my-food-site/src/food.html">
                   <h1
                     class="text-red-800 border-2 border-solid border-gray-100 py-2 px-4 rounded-full hover:bg-slate-400 hover:text-white">
@@ -137,11 +138,17 @@
                     class="text-red-800 border-2 border-solid border-gray-100 py-2 px-4 rounded-full hover:bg-slate-400 hover:text-white">
                     My BR Architect</h1>
                 </a>
+                <a href="https://nyiranez.github.io/potifolio-full/src/index.html">
+                  <h1
+                    class="text-red-800 border-2 border-solid border-gray-100 py-2 px-4 rounded-full hover:bg-slate-400 hover:text-white">
+                    My Commerce app</h1>
+                </a>
               </div>
               <div
-                class="sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row flex flex-col lg:space-x-4 space-y-4 bg-slate-50 items-center justify-center h-fit shadow-lg shadow-indigo-400/40 mt-8">
-                <img src="../images/sandwich.jpg" class="w-96 ">
-                <img src="../images/architect.jpg" class="w-96">
+                class="sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row flex flex-col lg:space-x-4 space-y-4 bg-slate-50  shadow-lg shadow-indigo-400/40 h-screen justify-center items-center mt-4">
+                <img src="../images/sandwich.jpg" class="w-80 h-96 ">
+                <img src="../images/architect.jpg" class="w-80 h-96">
+                <img src="../images/josanclick-colorlib-template1.jpg" class="w-80 h-96">
               </div>
 
             </div>
@@ -153,12 +160,12 @@
 
         </div>
         <div id="skills"
-          class="bg-slate-300 opacity-65 w-full h-screen left-1/4 flex flex-col items-center justify-center">
+          class="bg-slate-300 opacity-65 w-full h-screen left-1/4 flex flex-col items-center justify-center  mt-52">
 
-          <div class="bg-slate-400 pl-8 pr-8 pb-8 shadow-lg shadow-red-400/40 mt-4 ">
+          <div class="bg-slate-400 md:pl-8 md:pr-8 pb-8 shadow-lg shadow-red-400/40 mt-4 ">
 
             <button class="font-bold text-xl text-white bg-orange-950 py-2 px-4 mt-2 rounded-e-xl">Skills</button>
-            <div class="flex flex-row space-x-4">
+            <div class="flex md:flex-row flex-col md:space-x-4">
               <div>
                 <div>
                   <div class="w-96 bg-slate-200 space-y-2 mt-4">
@@ -218,8 +225,8 @@
               </div>
             </div>
           </div>
-          <footer class="bg-slate-50 w-full h-96 mt-16 left-1/4">
-            <div class="lg:flex lg:flex-row  flex flex-col lg:justify-around lg:items-center">
+          <footer class="bg-slate-50 w-full h-96 md:mt-16 mt-4 left-1/4">
+            <div class="lg:flex lg:flex-row  flex flex-col lg:justify-around lg:items-center pl-8">
               <div class="space-y-4">
                 <h1 class="font-bold text-xl">More</h1>
                 <ul>
@@ -252,6 +259,20 @@
             </div>
 
           </footer>
+          
+            <button class="md:hidden top-0 right-0 absolute"><img src="../images/menu-512.webp" class="w-16 h-16" id="menu"></button>
+            <div class="bg-white shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] md:hidden w-52 h-60 md:absolute  top-0 left-0 absolute opacity-0" id="nav-hid">
+              <ul class="flex sm:flex sm:flex-col sm:text-center  md:justify-center items-center gap-4 sm:mt-20 mt-6  text-gray-500 flex-col">
+                <li><a href="" class="hover:text-black hover:underline text-xl">Home</a></li>
+                <li><a href="#about" class="hover:text-black hover:underline text-xl">About</a></li>
+                <li><a href="#skills" class="hover:text-black hover:underline text-xl">Skills</a></li>
+                <li> <a href="#project" class="hover:text-black hover:underline text-xl">Project</a></li>
+                <li><a href="#contact" class="hover:text-black hover:underline text-xl">Contact</a></li>
+        
+              </ul>
+              <span class="bg-red-700 text-white py-2 px-4 absolute top-0 right-0 font-bold text-2xl" id="exit">x</span>
+            </div>
+          
         </div>
 
 
@@ -259,7 +280,7 @@
     </div>
 
   </div>
-
+  <script src="index.js"></script>
 </body>
 
 </html>
